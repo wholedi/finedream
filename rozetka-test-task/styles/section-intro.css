@@ -1,0 +1,124 @@
+.section {
+  color: var(--secondary-text);
+}
+.section__intro {
+  background-color: var(--background);
+}
+
+.intro__bg-star {
+  background-image: url("../img/star.png");
+}
+.intro__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 94px;
+}
+.intro__block-title {
+  text-align: center;
+}
+.intro__block-title > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+.intro__title {
+  font-size: 45px;
+}
+.intro__title--bold {
+  font-size: 65px;
+  text-transform: uppercase;
+}
+.intro__main-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 87px;
+}
+.intro__info-block {
+  display: flex;
+  margin-bottom: 55px;
+}
+.intro__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.intro__info-container {
+  margin-bottom: 55px;
+}
+.intro__subtitle {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.intro__text-info {
+  font-size: 24px;
+}
+.intro__text-info > p:not(:last-child) {
+  margin-bottom: 22px;
+}
+.intro__info-label {
+  display: flex;
+}
+.intro__label-item {
+  font-size: 27px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  width: 50%;
+  align-items: center;
+}
+.intro__label {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+@media (max-width: 1440px) {
+  .intro__main-photo img {
+    max-width: 1100px;
+  }
+}
+@media (max-width: 1200px) {
+  .intro__main-photo img {
+    max-width: 900px;
+  }
+  .intro__info {
+    align-items: center;
+    text-align: center;
+  }
+  .intro__label {
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .intro__main-photo img {
+    max-width: 700px;
+  }
+  .intro__label {
+    gap: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .intro__header, .intro__info-block, .intro__info-label {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .intro__main-photo img {
+    max-width: 600px;
+    margin-top: 30px;
+  }
+  .intro__label-item {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .intro__main-photo img {
+    max-width: 400px;
+  }
+}
+
+/*# sourceMappingURL=section-intro.css.map */
